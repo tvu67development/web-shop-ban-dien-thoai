@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+C:\Users\Admin\Desktop\ASM3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1522857754.index
+\PRJ321_ASM3_trungvqfx14135\src\main\java
+C:\Users\Admin\Desktop\ASM3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\432749885.index
+\PRJ321_ASM2_trungvqfx14135\src\main\java
+C:\Users\Admin\Desktop\ASM3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4212957290.index
+\PRJ_WebBanGiay\src\main\java
+C:\Users\Admin\Desktop\ASM3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\498862195.index
+\Project_3_trungvqfx14135\src\main\java
+C:\Users\Admin\Desktop\ASM3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3893442711.index
+\PRJ321_ASM3_trungvqfx14135\src\main\java
+C:\Users\Admin\Desktop\ASM3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3612084984.index
+\PRJ321_ASM2_trungvqfx14135\src\main\java

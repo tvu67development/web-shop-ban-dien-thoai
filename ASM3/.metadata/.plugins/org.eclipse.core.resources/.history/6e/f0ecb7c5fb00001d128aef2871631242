@@ -1,0 +1,93 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import context.DBContext;
+import entity.Product;
+
+public class DAO {
+	// Connect to SQL Server
+	Connection conn = null;
+	// get SQL query to SQL Server
+	PreparedStatement ps = null;
+	// receive result from SQL Server
+	ResultSet rs = null;
+
+	public List<Product> getAllProduct() {
+		List<Product> list = new ArrayList<>();
+		String query = "select * from products ";
+		try {
+			// open connect to SQL Server
+			conn = new DBContext().getConnection();
+			// query to SQL Server
+			ps = conn.prepareStatement(query);
+			// return result, save to para "rs"
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				list.add(new Product(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getDouble(4), rs.getString(5),
+						rs.getString(6), rs.getString(7)));
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+		return list;
+	}
+
+	public Product getProductByID(String id) {
+		String query = "select * from products where product_id = ?";
+		try {
+			// open connect to SQL Server
+			conn = new DBContext().getConnection();
+			// query to SQL Server
+			ps = conn.prepareStatement(query);
+			// replace "?" by para "id"
+			ps.setString(1, id);
+			// return result, save to para "rs"
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				return new Product(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getDouble(4), rs.getString(5),
+						rs.getString(6), rs.getString(7));
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return null;
+	}
+
+	public List<Product> searchByName(String txtSearch) {
+		List<Product> list = new ArrayList<>();
+		String query = "select * from products where product_name like ?";
+		try {
+			// open connect to SQL Server
+			conn = new DBContext().getConnection();
+			// query to SQL Server
+			ps = conn.prepareStatement(query);
+			// replace "?" by para "cid"
+			ps.setString(1, "%" + txtSearch + "%");
+			// return result, save to para "rs"
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				list.add(new Product(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getDouble(4), rs.getString(5),
+						rs.getString(6), rs.getString(7)));
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+		return list;
+	}
+
+
+	public static void main(String[] args) {
+		DAO dao = new DAO();
+		List<Product> list = dao.searchByName("567222");
+		for (Product o : list) {
+			System.out.println(o);
+		}
+	}
+}

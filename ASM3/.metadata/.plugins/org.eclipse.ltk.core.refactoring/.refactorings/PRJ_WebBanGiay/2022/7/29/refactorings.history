@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;Project_3_trungvqfx14135/src/main/java/control&apos;&#x0D;&#x0A;- Original project: &apos;PRJ_WebBanGiay&apos;&#x0D;&#x0A;- Destination element: &apos;Project_3_trungvqfx14135/src/main/java/control&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     control.SignUpControl.java&#x0D;&#x0A;     control.LoginControl.java" description="Copy compilation units" destination="=Project_3_trungvqfx14135/src\/main\/java&lt;control" element1="/src\/main\/java&lt;control{SignUpControl.java" element2="/src\/main\/java&lt;control{LoginControl.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1657531389930" units="2" version="1.0"/>
+</session>

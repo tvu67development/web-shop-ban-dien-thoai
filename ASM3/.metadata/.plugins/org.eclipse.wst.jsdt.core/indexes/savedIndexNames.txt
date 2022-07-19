@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\Admin\Desktop\PRJ\ASM3\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1134690427.index
+3938473556.index
+3700887280.index
+4288523672.index
+2349635463.index
+270353553.index
+3462962765.index

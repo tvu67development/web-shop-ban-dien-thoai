@@ -1,0 +1,9 @@
+package entity;
+
+public class Orders {
+	
+	private int orderId;
+	private float price;
+	private int status;
+	
+}
